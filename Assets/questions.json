@@ -2,6 +2,9 @@
   "questions": 
   [
     {
+      "title": "This is a title",
+      "description": "This is a basic description for a question lul\nAnd this is a new line of the desc lol",
+      "codeSnippet": "public class Questions\n{\n    public List<Question> questions = new List<Question>();\n}",
       "question": "Who is your boss?",
       "answers":
       [
