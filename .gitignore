@@ -50,5 +50,6 @@ crashlytics-build.properties
 # Github plugins
 /Assets/Plugins/
 .idea/
+.idea
 /Temp/
 /Logs/
