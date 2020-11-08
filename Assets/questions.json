@@ -1,0 +1,23 @@
+﻿{
+  "questions": 
+  [
+    {
+      "question": "Who is your boss?",
+      "answers":
+      [
+        {
+          "value":"How are you?",
+          "correct":true
+        },
+        {
+          "value":"Who are you?",
+          "correct":false
+        },
+        {
+          "value":"Where are you?",
+          "correct":false
+        }
+      ]
+    }
+  ]
+}
