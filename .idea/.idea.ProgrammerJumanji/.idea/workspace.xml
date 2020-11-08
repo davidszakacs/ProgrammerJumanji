@@ -30,6 +30,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.git/info/exclude" />
       </list>
     </option>
   </component>
@@ -48,7 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Issue.Navigation" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604831798507</updated>
       <workItem from="1604831801895" duration="10752000" />
-      <workItem from="1604852413554" duration="9823000" />
+      <workItem from="1604852413554" duration="11216000" />
     </task>
     <servers />
   </component>
@@ -93,10 +94,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1221" y="345" key="SettingsEditor" timestamp="1604833951949">
+    <state x="1221" y="345" key="SettingsEditor" timestamp="1604865164147">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1221" y="345" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1604833951949" />
+    <state x="1221" y="345" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1604865164147" />
     <state x="1383" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1604838966543">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
