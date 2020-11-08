@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/Assets/questions.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -79,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604831798507</updated>
       <workItem from="1604831801895" duration="10752000" />
-      <workItem from="1604852413554" duration="9516000" />
+      <workItem from="1604852413554" duration="9711000" />
     </task>
     <servers />
   </component>
