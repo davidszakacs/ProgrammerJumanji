@@ -18,7 +18,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -26,11 +29,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Answers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Questions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QuestionsHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/questions.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.git/info/exclude" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tiling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Answer.cs" />
+        <option value="$PROJECT_DIR$/Assets/questions.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +95,8 @@
       <updated>1604831798507</updated>
       <workItem from="1604831801895" duration="10752000" />
       <workItem from="1604852413554" duration="11216000" />
+      <workItem from="1604910770018" duration="12107000" />
+      <workItem from="1605013594660" duration="948000" />
     </task>
     <servers />
   </component>

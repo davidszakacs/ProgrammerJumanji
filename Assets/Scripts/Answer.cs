@@ -8,4 +8,5 @@ public class Answer
 {
     public string value;
     public bool correct;
+    public string hint;
 }

@@ -10,15 +10,18 @@
       [
         {
           "value":"How are you?",
-          "correct":true
+          "correct":true,
+          "hint": "Try again but better"
         },
         {
           "value":"Who are you?",
-          "correct":false
+          "correct":false,
+          "hint": "Try again but better"
         },
         {
           "value":"Where are you?",
-          "correct":false
+          "correct":false,
+          "hint": "Try again but better"
         }
       ]
     }

@@ -6,66 +6,82 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private QuestionsHandler handler;
-    private List<Question> _questions;
     public GameObject answerPrefab;
     public GameObject questionPrefab;
     public GameObject paragraphPrefab;
     public GameObject codePrefab;
     public GameObject buttonPrefab;
     public GameObject canvas;
+    public GameObject healthObject;
     public float answerSpacing = 40;
+    
+    
+    private QuestionsHandler handler;
+    private List<Question> _questions;
     private List<GameObject> _answers = new List<GameObject>();
     private Question _activeQuestion;
+    private PlayerData _playerData = new PlayerData();
+    private AudioSource audioData;
+    private bool questionLoaded = false;
+    public float lastUIBottom = 0f;
+    private GameObject questionUI;
+    
     void Start()
     { 
         //Making an instance of the QuestionsHandler and loading the questions
         handler = gameObject.AddComponent<QuestionsHandler>();
         handler.loadQuestions();
         _questions = handler.GetQuestions().questions;
+
+
+        audioData = GetComponent<AudioSource>();
         
-        
-        Question temp = GetQuestion(0);
-        displayQuestion(temp);
     }
 
-    private Question GetQuestion(int id)
+    public void eventDisplayQuestion(int id)
     {
-        return _questions[id];
+        displayQuestion(_questions[id]);
     }
-
+    
     private void displayQuestion(Question question)
     {
+        if (questionLoaded)
+        {
+            return;
+        }
         _activeQuestion = question;
         //Making a new instance of the Question UI prefab
-        var newQuestion = Instantiate(questionPrefab, new Vector2(-290, 0), Quaternion.identity);
-        newQuestion.transform.SetParent(canvas.transform, false);
+        questionUI = Instantiate(questionPrefab, new Vector2(-290, 0), Quaternion.identity);
+        questionUI.transform.SetParent(canvas.transform, false);
         
         //Setting the title
-        newQuestion.transform.Find("Title").GetComponentInChildren<Text>().text = question.title;
+        questionUI.transform.Find("Title").GetComponentInChildren<Text>().text = question.title;
         
         //Displaying the description
-        GameObject desc = displayParagraph(newQuestion, question.description, 0, 251);
-        float bottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
+        GameObject desc = displayParagraph(questionUI, question.description, 0, 251);
+        lastUIBottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
         
         //Display the code snippet
-        bottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
-        desc = displayCode(newQuestion, question.codeSnippet, 0, bottom);
+        lastUIBottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
+        desc = displayCode(questionUI, question.codeSnippet, 0, lastUIBottom);
         
         //Displaying the question
-        bottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
-        desc = displayParagraph(newQuestion, question.question, 0, bottom);
+        lastUIBottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
+        desc = displayParagraph(questionUI, question.question, 0, lastUIBottom);
         
         //Displaying all the answer possibilities
-        bottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
+        lastUIBottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
         foreach (var answer in question.answers)
         {
-            GameObject temp = displayAnswer(newQuestion, answer.value, 0, bottom - answerSpacing);
-            bottom = temp.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
+            GameObject temp = displayAnswer(questionUI, answer.value, 0, lastUIBottom - answerSpacing);
+            lastUIBottom = temp.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
         }
         
         //Displaying the submit button
-        desc = displayButton(newQuestion, 0, bottom - answerSpacing);
+        desc = displayButton(questionUI, 0, lastUIBottom - answerSpacing);
+        lastUIBottom = desc.GetComponent<RectTransform>().anchoredPosition.y - desc.GetComponent<RectTransform>().sizeDelta[1];
+        
+        questionLoaded = true;
     }
 
     private GameObject displayParagraph(GameObject parent, string text, float x = 0f, float y = 0f)
@@ -115,18 +131,28 @@ public class GameManager : MonoBehaviour
     private void checkAnswer()
     {
         bool correct = true;
-        for(var i = 0; i < _answers.Count; ++i)
+        int wrongId = 0;
+        for(int i = 0; i < _answers.Count; ++i)
         {
             if (_answers[i].GetComponentInChildren<Toggle>().isOn != _activeQuestion.answers[i].correct)
             {
                 correct = false;
+                wrongId = i;
                 break;
             }
         }
 
-        if (correct)
+        if (!correct && _playerData.health > 0)
         {
-            Debug.Log("Correct answers!!");
+            displayParagraph(questionUI, _activeQuestion.answers[wrongId].hint, lastUIBottom - answerSpacing);
+            _playerData.health--;
+            healthObject.transform.GetChild(_playerData.health).GetComponent<Image>().enabled = false;
+            audioData.Play();
+        }
+        
+        for(var i = 0; i < _answers.Count; ++i)
+        {
+            _answers[i].GetComponentInChildren<Toggle>().isOn = false;
         }
     }
     
