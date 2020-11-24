@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public float runSpeed = 40f;
+    public bool canJump = false;
     
     private float horizontalMove = 0f;
     private bool jump = false;
@@ -15,7 +16,7 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && canJump)
         {
             jump = true;
         }

@@ -18,10 +18,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnswerHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -29,21 +32,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Answers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Questions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QuestionsHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.git/info/exclude" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tiling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Answer.cs" />
-        <option value="$PROJECT_DIR$/Assets/questions.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" />
+        <option value="$PROJECT_DIR$/Assets/DT Inventory Pro/Code/Inventory/InventoryManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/2D/Scripts/Camera2DFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
+        <option value="$PROJECT_DIR$/Assets/questions.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnswerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -97,6 +105,10 @@
       <workItem from="1604852413554" duration="11216000" />
       <workItem from="1604910770018" duration="12107000" />
       <workItem from="1605013594660" duration="948000" />
+      <workItem from="1605075843311" duration="596000" />
+      <workItem from="1605125889078" duration="1664000" />
+      <workItem from="1605170968989" duration="3980000" />
+      <workItem from="1606123241464" duration="21439000" />
     </task>
     <servers />
   </component>

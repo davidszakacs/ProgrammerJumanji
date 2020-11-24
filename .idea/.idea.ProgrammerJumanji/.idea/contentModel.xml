@@ -5,9 +5,50 @@
     <e p="C:\Users\szaka\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ProgrammerJumanji.611291456.00" t="ExcludeRecursive" />
     <e p="E:\MyGames\ProgrammerJumanji" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="DT Inventory Pro" t="Include">
+          <e p="Code" t="Include">
+            <e p="Demo" t="Include">
+              <e p="FloatingShreds.cs" t="Include" />
+              <e p="FPSController.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="DatabaseEditor.cs" t="Include" />
+              <e p="InventoryExtended.cs" t="Include" />
+              <e p="InventoryWizard.cs" t="Include" />
+              <e p="ItemCustomInspector.cs" t="Include" />
+              <e p="ItemEditor.cs" t="Include" />
+            </e>
+            <e p="Inventory" t="Include">
+              <e p="AssetsDatabase.cs" t="Include" />
+              <e p="DTInventory.cs" t="Include" />
+              <e p="EquipmentPanel.cs" t="Include" />
+              <e p="GridSlot.cs" t="Include" />
+              <e p="InventoryItem.cs" t="Include" />
+              <e p="InventoryManager.cs" t="Include" />
+              <e p="Item.cs" t="Include" />
+              <e p="ItemDatabase.cs" t="Include" />
+              <e p="LootBox.cs" t="Include" />
+            </e>
+            <e p="Level Transition" t="Include">
+              <e p="DontDestroyInstance.cs" t="Include" />
+              <e p="LevelPoint.cs" t="Include" />
+              <e p="LevelTransition.cs" t="Include" />
+              <e p="RegisterPlayerInstance.cs" t="Include" />
+            </e>
+            <e p="PickupItem.cs" t="Include" />
+            <e p="SaveData.cs" t="Include" />
+            <e p="TouchPickupItemHandler.cs" t="Include" />
+          </e>
+          <e p="DemoContent" t="Include">
+            <e p="Weapons" t="Include">
+              <e p="License.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
@@ -39,9 +80,12 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Answer.cs" t="Include" />
+          <e p="AnswerHandler.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="PlayerAttack.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
           <e p="Question.cs" t="Include" />
           <e p="Questions.cs" t="Include" />
@@ -286,9 +330,116 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
-      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive">
+        <e p="com.unity.2d.tilemap.extras" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Brushes" t="Include">
+              <e p="CoordinateBrush" t="Include">
+                <e p="CoordinateBrush.cs" t="Include" />
+              </e>
+              <e p="GameObjectBrush" t="Include">
+                <e p="GameObjectBrush.cs" t="Include" />
+              </e>
+              <e p="GroupBrush" t="Include">
+                <e p="GroupBrush.cs" t="Include" />
+              </e>
+              <e p="LineBrush" t="Include">
+                <e p="LineBrush.cs" t="Include" />
+              </e>
+              <e p="PrefabBrushes" t="Include">
+                <e p="BasePrefabBrush.cs" t="Include" />
+                <e p="PrefabBrush" t="Include">
+                  <e p="PrefabBrush.cs" t="Include" />
+                </e>
+                <e p="PrefabRandomBrush" t="Include">
+                  <e p="PrefabRandomBrush.cs" t="Include" />
+                </e>
+              </e>
+              <e p="RandomBrush" t="Include">
+                <e p="RandomBrush.cs" t="Include" />
+              </e>
+              <e p="TintBrush" t="Include">
+                <e p="TintBrush.cs" t="Include" />
+              </e>
+              <e p="TintBrushSmooth" t="Include">
+                <e p="TintBrushSmooth.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Tiles" t="Include">
+              <e p="HexagonalRuleTile" t="Include">
+                <e p="HexagonalRuleTileEditor.cs" t="Include" />
+              </e>
+              <e p="IsometricRuleTile" t="Include">
+                <e p="IsometricRuleTileEditor.cs" t="Include" />
+              </e>
+              <e p="RuleOverrideTile" t="Include">
+                <e p="AdvancedRuleOverrideTileEditor.cs" t="Include" />
+                <e p="PopulateRuleOverrideTileWizard.cs" t="Include" />
+                <e p="RuleOverrideTileEditor.cs" t="Include" />
+              </e>
+              <e p="RuleTile" t="Include">
+                <e p="CustomRuleTileMenu.cs" t="Include" />
+                <e p="RuleTileEditor.cs" t="Include" />
+                <e p="ScriptTemplates" t="Include">
+                  <e p="NewCustomRuleTile.cs.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Unity.2D.Tilemap.Extras.Editor.asmdef" t="Include" />
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="Brushes" t="Include">
+              <e p="TintedTilemap.shader" t="Include" />
+              <e p="TintTextureGenerator.cs" t="Include" />
+            </e>
+            <e p="GridInformation" t="Include">
+              <e p="GridInformation.cs" t="Include" />
+            </e>
+            <e p="Tiles" t="Include">
+              <e p="AnimatedTile" t="Include">
+                <e p="AnimatedTile.cs" t="Include" />
+              </e>
+              <e p="HexagonalRuleTile" t="Include">
+                <e p="HexagonalRuleTile.cs" t="Include" />
+              </e>
+              <e p="IsometricRuleTile" t="Include">
+                <e p="IsometricRuleTile.cs" t="Include" />
+              </e>
+              <e p="PipelineTile" t="Include">
+                <e p="PipelineTile.cs" t="Include" />
+              </e>
+              <e p="RandomTile" t="Include">
+                <e p="RandomTile.cs" t="Include" />
+              </e>
+              <e p="RuleOverrideTile" t="Include">
+                <e p="AdvancedRuleOverrideTile.cs" t="Include" />
+                <e p="RuleOverrideTile.cs" t="Include" />
+              </e>
+              <e p="RuleTile" t="Include">
+                <e p="RuleTile.cs" t="Include" />
+              </e>
+              <e p="TerrainTile" t="Include">
+                <e p="TerrainTile.cs" t="Include" />
+              </e>
+              <e p="WeightedRandomTile" t="Include">
+                <e p="WeightedRandomTile.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Unity.2D.Tilemap.Extras.asmdef" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PlaceholderTests.cs" t="Include" />
+              <e p="Unity.2D.Tilemap.Extras.EditorTests.asmdef" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="ProgrammerJumanji.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity.2D.Tilemap.Extras.csproj" t="IncludeRecursive" />
+      <e p="Unity.2D.Tilemap.Extras.Editor.csproj" t="IncludeRecursive" />
+      <e p="Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

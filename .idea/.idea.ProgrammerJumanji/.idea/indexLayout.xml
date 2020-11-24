@@ -17,7 +17,6 @@
       <Path>Library/PackageCache/com.unity.test-framework@1.1.18</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.1.1</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.2.17</Path>
-      <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
@@ -25,6 +24,7 @@
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

@@ -10,5 +10,8 @@ public class Question
     public string description;
     public string question;
     public string codeSnippet;
+    public string correctText;
+    public float readDelay;
+    public bool autoLoad;
     public List<Answer> answers = new List<Answer>();
 }

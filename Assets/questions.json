@@ -2,26 +2,110 @@
   "questions": 
   [
     {
-      "title": "This is a title",
-      "description": "This is a basic description for a question lul\nAnd this is a new line of the desc lol",
-      "codeSnippet": "public class Questions\n{\n    public List<Question> questions = new List<Question>();\n}",
-      "question": "Who is your boss?",
+      "title": "Basic movement",
+      "description": "Your friend has spawned.\nBut he can't move because there isn't a MovementController object initialized.\n",
+      "codeSnippet": "<color=#F78C6C><b>public</b></color> <color=#F78C6C><b>static</b></color> void main(String[] args) <color=#89DDF7>{</color>\n  Player player <color=#89DDF7>=</color> <color=#F78C6C><b>new</b></color> Player<color=#89DDF7>(</color><color=#BD92EA>\"Johnny\"</color><color=#89DDF7>)</color><color=#89DDF7>;</color>\n  <color=#89DDF7>.</color><color=#89DDF7>.</color><color=#89DDF7>.</color><color=#89DDF7>.</color>\n<color=#89DDF7>}</color>\n",
+      "question": "Complete the line with the correct initilization of the <b><color=#6F473B>MovementController</color></b> object.\nThe MovementController takes as parameter a player object that it will control.",
+      "correctText": "Good job, your friend can move now!",
+      "readDelay": 1,
+      "autoLoad": false,
       "answers":
       [
         {
-          "value":"How are you?",
+          "value":"MovementController move;",
+          "correct":false,
+          "hint": "The move variable doesn't get any value."
+        },
+        {
+          "value":"MovementController move = new move;",
+          "correct":false,
+          "hint": "Invalid value set for variable move."
+        },
+        {
+          "value":"MovementController move = new MovementController();",
+          "correct":false,
+          "hint": "MovementController takes a Player object as parameter."
+        },
+        {
+          "value":"MovementController move = new MovementController(player);",
           "correct":true,
-          "hint": "Try again but better"
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "title": "Jumping",
+      "description": "Johnny can move now, but he can't jump just yet.\nHe has a boolean attribute called <b>canJump</b> but it isn't set to true when he initializes.",
+      "codeSnippet": "<color=#F78C6C><b>public</b></color> <color=#F78C6C><b>static</b></color> void main(String[] args) <color=#89DDF7>{</color>\n  Player player <color=#89DDF7>=</color> <color=#F78C6C><b>new</b></color> Player<color=#89DDF7>(</color><color=#BD92EA>\"Johnny\"</color><color=#89DDF7>)</color><color=#89DDF7>;</color>\n  <color=#89DDF7>.</color><color=#89DDF7>.</color><color=#89DDF7>.</color><color=#89DDF7>.</color>\n<color=#89DDF7>}</color>\n",
+      "question": "Where should you set the <b>canJump</b> attribute to true so he can jump after initializing?",
+      "correctText": "Nicely done! Johnny can jump now!",
+      "readDelay": 1,
+      "autoLoad": false,
+      "answers":
+      [
+        {
+          "value":"In a new method called setSpawn(), that you call from Main.",
+          "correct":false,
+          "hint": "That works, but if you forget to call it from Main he can't jump."
         },
         {
-          "value":"Who are you?",
+          "value":"In the constructor of the Player object.",
+          "correct":true,
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "title": "The sword I",
+      "description": "Johnny has a sword on him but he has no way to use it yet.\nThe creators of the game only made the sword class but didn't implement it.",
+      "codeSnippet": "<color=#e66170><b>public</b></color> <color=#e66170><b>class</b></color> Sword <color=#b060b0>{</color>\n    <color=#e66170><b>private</b></color> bool inHand<color=#b060b0>;</color>\n    <color=#e66170><b>private</b></color> <color=#BD92EA>int</color> damage<color=#b060b0>;</color>\n\n    <color=#e66170><b>public</b></color> Sword<color=#d2cd86>(</color>bool inHand<color=#d2cd86>,</color> <color=#BD92EA>int</color> damage<color=#d2cd86>)</color> <color=#b060b0>{</color>\n        <color=#d2cd86>.</color><color=#d2cd86>.</color><color=#d2cd86>.</color><color=#d2cd86>.</color><color=#d2cd86>.</color>\n    <color=#b060b0>}</color>\n<color=#b060b0>}</color>",
+      "question": "How do you initialize the two attributes of the Sword?",
+      "correctText": "Awesome! Johnny now has a sword he can use.",
+      "readDelay": 1,
+      "autoLoad": false,
+      "answers":
+      [
+        {
+          "value":"int damage = 50; bool inHand = false;",
           "correct":false,
-          "hint": "Try again but better"
+          "hint": "Invalid redeclaration of 'damage' and 'inHand'."
         },
         {
-          "value":"Where are you?",
+          "value":"this.damage = damage; this.inHand = inHand;",
+          "correct":true,
+          "hint": ""
+        },
+        {
+          "value":"damage = damage; inHand = inHand;",
           "correct":false,
-          "hint": "Try again but better"
+          "hint": "The attributes' values didn't change."
+        }
+      ]
+    },
+    {
+      "title": "The sword II",
+      "description": "Now that Johnny's sword has it's attributes initialized, we have to make an instance of it.",
+      "codeSnippet": "<color=#e66170><b>public</b></color> <color=#e66170><b>class</b></color> Sword <color=#b060b0>{</color>\n    <color=#e66170><b>private</b></color> bool inHand<color=#b060b0>;</color>\n    <color=#e66170><b>private</b></color> <color=#BD92EA>int</color> damage<color=#b060b0>;</color>\n\n    <color=#e66170><b>public</b></color> Sword<color=#d2cd86>(</color>bool inHand<color=#d2cd86>,</color> <color=#BD92EA>int</color> damage<color=#d2cd86>)</color> <color=#b060b0>{</color>\n        <color=#d2cd86>.</color><color=#d2cd86>.</color><color=#d2cd86>.</color><color=#d2cd86>.</color><color=#d2cd86>.</color>\n    <color=#b060b0>}</color>\n<color=#b060b0>}</color>",
+      "question": "How do you initialize the two attributes of the Sword?",
+      "correctText": "Awesome! Johnny now has a sword, but we still have some work to do with it.",
+      "readDelay": 2,
+      "autoLoad": true,
+      "answers":
+      [
+        {
+          "value":"int damage = 50; bool inHand = false;",
+          "correct":false,
+          "hint": "Invalid redeclaration of 'damage' and 'inHand'."
+        },
+        {
+          "value":"this.damage = damage; this.inHand = inHand;",
+          "correct":true,
+          "hint": ""
+        },
+        {
+          "value":"damage = damage; inHand = inHand;",
+          "correct":false,
+          "hint": "The attributes' values didn't change."
         }
       ]
     }
